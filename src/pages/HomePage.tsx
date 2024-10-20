@@ -26,8 +26,12 @@ const HomePage = () => {
                         <h1 className="text-2xl sm:text-3xl md:text-4xl text-blue-900 font-bold mb-4 md:w-3/4">You are Never too Young to start an Empire and Never too Old to Pursue a Dream</h1>
                         <button className="bg-orange-500 text-white px-4 sm:px-6 py-2 rounded-full hover:bg-orange-600 text-sm sm:text-base">Ask me how</button>
                     </div>
-                    <div className="w-full md:w-1/2 -mb-40 sm:-mb-30 bottom-0">
-                        <img src={sagar} alt="Hero image" className="w-full  h-auto rounded-lg" />
+                    <div className="w-full md:w-1/2 -mb-40 sm:-mb-30 bottom-0 relative fade-in-image">
+                        <img
+                            src={sagar}
+                            alt="Hero image"
+                            className="w-full h-auto rounded-lg"
+                        />
                     </div>
                 </div>
 
@@ -115,16 +119,16 @@ const HomePage = () => {
             </section >
 
             {/* Course Section */}
-            < section className="bg-blue-900 rounded-lg text-white m-14" >
+            < section className="bg-blue-900 rounded-lg text-white m-8 md:m-14" >
                 <CoursePromoCard />
                 {/* <CoursePromoCard /> */}
             </section >
 
             {/* Awards Section */}
-            < section className="py-6 sm:py-10 px-4 sm:px-6 md:px-10" >
+            < section className="py-6 sm:py-10 items-center justify-center flex px-4 sm:px-6 md:px-10" >
                 <AwardsAchievements />
             </section >
-            < section className="py-6 sm:py-20 px-4 sm:px-6 md:px-10" >
+            < section className=" sm:py-20 px-4 sm:px-6 md:px-10" >
                 <FeaturedVideos />
             </section >
 

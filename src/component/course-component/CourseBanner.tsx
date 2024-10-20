@@ -17,7 +17,7 @@ const HeroSection = () => (
             <img
                 src={courseBannerimage2}
                 alt="Sagar Babar"
-                className="w-full h-auto max-w-md mx-auto lg:max-w-full"
+                className="w-full h-auto max-w-md mx-auto lg:max-w-full fade-in-image"
             />
             {/* Uncomment and adjust as needed */}
             {/* <div className="absolute top-36 right-24 bg-red-500 text-white rounded-full p-2 text-xs sm:text-sm">

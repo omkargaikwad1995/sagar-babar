@@ -5,7 +5,7 @@ import MarketingIcon from '../../assets/icons/Group 1000006528.svg';
 import CustomerServiceIcon from '../../assets/icons/Group 1000006525.svg';
 
 const WhatYoullLearn = () => (
-    <section className="p-8">
+    <section className="p-6">
         <h2 className="text-2xl font-bold mb-6 text-center">
             What <span className="text-orange-500">You'll Learn</span>
         </h2>

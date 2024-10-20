@@ -10,7 +10,7 @@ const ContactForm = () => {
     return (
         <div>
             <section>
-                <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+                <div className="bg-white py-6 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                             {/* Left column */}
@@ -33,10 +33,10 @@ const ContactForm = () => {
 
                             {/* Right column */}
                             <div className="relative">
-                                <div className="absolute top-0 -mt-4 w-16 h-16 transform rotate-45">
+                                <div className="absolute top-2 right-8 md:right-8 -mr-12 -mt-12 w-16 h-16 transform rotate-45">
                                     <img src={icon2} alt="" />
                                 </div>
-                                <div className="absolute bottom-16 left-0 -ml-10 -mb-4 w-8 h-8 transform rotate-45">
+                                <div className="absolute bottom-0 left-6 -ml-10 -mb-4 w-8 h-8 transform rotate-45">
                                     <img src={icon2} alt="" />
                                 </div>
                                 <div className="bg-white shadow-lg rounded-lg p-8 relative z-10">

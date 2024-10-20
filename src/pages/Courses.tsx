@@ -19,7 +19,7 @@ const Courses = () => {
                     <section className="py-12 px-4 sm:px-6 lg:px-8">
                         <WhatYoullLearn />
                     </section>
-                    <section className="py-12 px-4 sm:px-6 lg:px-8">
+                    <section className="px-4 sm:px-6 lg:px-8">
                         <WhoIsThisCourseFor />
                     </section>
                 </div>

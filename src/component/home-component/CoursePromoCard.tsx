@@ -111,7 +111,7 @@ const CoursePromoCard = () => {
                         </span>
                         <span
                             key={`old-price-${animationKey}`}
-                            className="text-2xl sm:text-3xl lg:text-4xl font-bold line-through text-orange-500 absolute left-24 sm:left-26 animate-slide-out"
+                            className="text-2xl sm:text-3xl lg:text-4xl  font-bold line-through text-orange-500 absolute left-16 sm:left-24 animate-slide-out"
                         >
                             ₹3999
                         </span>

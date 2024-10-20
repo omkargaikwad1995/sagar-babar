@@ -46,3 +46,17 @@ body {
 .animate-slide-out {
     animation: slideOut 5s infinite;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-image {
+    animation: fadeIn 0.5s ease-in-out;
+}

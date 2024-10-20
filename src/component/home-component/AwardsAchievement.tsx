@@ -34,7 +34,7 @@ const AwardsAchievements = () => {
 
     return (
         <div className="container px-8 relative">
-            <h2 className="text-xl md:text-3xl font-bold text-center mb-8">Awards & Achievements</h2>
+            <h2 className="text-xl md:text-3xl font-bold justify-center text-center mb-8">Awards & Achievements</h2>
 
             <div className="flex flex-col md:flex-row items-center justify-center">
                 <AnimatePresence mode="wait">

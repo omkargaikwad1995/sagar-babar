@@ -45,9 +45,9 @@ const FeaturedVideos = () => {
     };
 
     return (
-        <div className="bg-orange-50 py-12">
+        <div className="bg-orange-50 py-6">
             <div className="container mx-auto px-4">
-                <h2 className="text-xl md:text-3xl font-bold text-center mb-8">Featured In</h2>
+                <h2 className="text-xl md:text-3xl font-bold text-center mb-6">Featured In</h2>
                 <div className="relative">
                     <div className="flex overflow-x-hidden">
                         <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentIndex * 25}%)` }}>
@@ -66,10 +66,10 @@ const FeaturedVideos = () => {
                         </div>
                     </div>
                     <button onClick={prevSlide} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-                        <ChevronLeft className="w-6 h-6" />
+                        <ChevronLeft className="w-4 h-4 md:w-4 md:h-4" />
                     </button>
                     <button onClick={nextSlide} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-                        <ChevronRight className="w-6 h-6" />
+                        <ChevronRight className="w-4 h-4 md:w-4 md:h-4" />
                     </button>
                 </div>
             </div>
