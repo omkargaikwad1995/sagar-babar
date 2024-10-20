@@ -34,7 +34,7 @@ const AwardsAchievements = () => {
 
     return (
         <div className="container px-8 relative">
-            <h2 className="text-3xl font-bold text-center mb-8">Awards & Achievements</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-center mb-8">Awards & Achievements</h2>
 
             <div className="flex flex-col md:flex-row items-center justify-center">
                 <AnimatePresence mode="wait">
@@ -46,7 +46,7 @@ const AwardsAchievements = () => {
                         transition={{ duration: 0.5 }}
                         className="md:w-2/3 mb-6 md:mb-0"
                     >
-                        <h3 className="text-2xl font-semibold mb-2">{slides[currentSlide].title}</h3>
+                        <h3 className="text-xl md:text-2xl font-semibold mb-2">{slides[currentSlide].title}</h3>
                         <p className="text-gray-500 mb-4">{slides[currentSlide].year}</p>
                         <p className="text-gray-700 w-2/3">{slides[currentSlide].description}</p>
                     </motion.div>

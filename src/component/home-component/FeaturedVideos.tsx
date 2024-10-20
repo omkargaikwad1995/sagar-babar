@@ -47,7 +47,7 @@ const FeaturedVideos = () => {
     return (
         <div className="bg-orange-50 py-12">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8">Featured In</h2>
+                <h2 className="text-xl md:text-3xl font-bold text-center mb-8">Featured In</h2>
                 <div className="relative">
                     <div className="flex overflow-x-hidden">
                         <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentIndex * 25}%)` }}>

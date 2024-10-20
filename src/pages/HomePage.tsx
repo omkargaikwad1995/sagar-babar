@@ -110,7 +110,7 @@ const HomePage = () => {
             </section>
 
             {/* Reasons to Approach Section */}
-            < section className="bg-gray-100 py-2 sm:py-20 px-4 sm:px-6 md:px-10" >
+            < section className="bg-gray-100 py-6 sm:py-10 px-4 sm:px-6 md:px-10" >
                 <ApproachReasons />
             </section >
 
@@ -121,10 +121,10 @@ const HomePage = () => {
             </section >
 
             {/* Awards Section */}
-            < section className="py-10 sm:py-20 px-4 sm:px-6 md:px-10" >
+            < section className="py-6 sm:py-10 px-4 sm:px-6 md:px-10" >
                 <AwardsAchievements />
             </section >
-            < section className="py-10 sm:py-20 px-4 sm:px-6 md:px-10" >
+            < section className="py-6 sm:py-20 px-4 sm:px-6 md:px-10" >
                 <FeaturedVideos />
             </section >
 

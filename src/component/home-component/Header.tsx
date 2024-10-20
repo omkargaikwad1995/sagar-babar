@@ -40,7 +40,7 @@ const Header = () => {
     const navItems = [
         { name: 'Home', path: '/' },
         { name: 'Course', path: '/course' },
-        { name: 'My Story', path: '/my-story' },
+        // { name: 'My Story', path: '/my-story' },
         { name: 'Contact', onClick: handleContactClick },
     ];
 
