@@ -33,7 +33,7 @@ const ContactForm = () => {
 
                             {/* Right column */}
                             <div className="relative">
-                                <div className="absolute top-0 right-0 -mr-14 -mt-4 w-16 h-16 transform rotate-45">
+                                <div className="absolute top-0 -mt-4 w-16 h-16 transform rotate-45">
                                     <img src={icon2} alt="" />
                                 </div>
                                 <div className="absolute bottom-16 left-0 -ml-10 -mb-4 w-8 h-8 transform rotate-45">

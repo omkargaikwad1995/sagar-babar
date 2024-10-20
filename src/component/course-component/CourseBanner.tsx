@@ -1,4 +1,4 @@
-import courseBannerimage2 from '../../assets/images/Group 1000006521.png';
+import courseBannerimage2 from '../../assets/images/course banner low.jpg'
 
 const HeroSection = () => (
     <section className="p-4 sm:p-8 flex flex-col lg:flex-row items-center">
@@ -20,9 +20,9 @@ const HeroSection = () => (
                 className="w-full h-auto max-w-md mx-auto lg:max-w-full"
             />
             {/* Uncomment and adjust as needed */}
-            <div className="absolute top-36 right-24 bg-red-500 text-white rounded-full p-2 text-xs sm:text-sm">
+            {/* <div className="absolute top-36 right-24 bg-red-500 text-white rounded-full p-2 text-xs sm:text-sm">
                 10+ Million
-            </div>
+            </div> */}
             {/* <div className="absolute bottom-4 right-4 bg-blue-100 text-blue-800 rounded-full p-2 text-xs sm:text-sm">
                 Top 100 impact leader
             </div> */}

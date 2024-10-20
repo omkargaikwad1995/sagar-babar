@@ -1,5 +1,5 @@
 import cover from '../assets/images/Group 351.jpg'
-import sagar from '../assets/images/banner main img.png'
+import sagar from '../assets/images/banner main low.jpg'
 import orange from '../assets/images/orange gradient rectangle.png'
 import bottom from '../assets/images/Vector 14.png'
 import AboutGrid from '../component/home-component/AboutGrid';
