@@ -1,0 +1,48 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    20%,
+    80% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* @keyframes slideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */
+
+.animate-slide-in {
+    animation: slideIn 5s infinite;
+}
+
+.animate-slide-out {
+    animation: slideOut 5s infinite;
+}
