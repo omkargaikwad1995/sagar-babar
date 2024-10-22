@@ -81,9 +81,11 @@ const CoursePromoCard = () => {
                     <h2 className="text-xl sm:text-2xl lg:text-3xl text-orange-400 font-bold">How to Start Business: </h2>
                     <h2 className='text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4'>Learn Basics</h2>
                     <p className="mb-6 text-sm sm:text-base text-gray-300 line-clamp-3 sm:line-clamp-none">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Dive into the world of entrepreneurship with our
+                        comprehensive 15-chapter course, designed
+                        specifically for Marathi businessmen. This course will
+                        equip you with the knowledge and practical skills to
+                        take your business to the next level!
                     </p>
                     <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 mb-6 text-sm sm:text-base text-white">
                         <div className="flex items-center">
@@ -99,7 +101,7 @@ const CoursePromoCard = () => {
                                 <path d="M17 8.90585L17.1259 8.80196C19.2417 7.05623 20.2996 6.18336 21.1498 6.60482C22 7.02628 22 8.42355 22 11.2181V12.7819C22 15.5765 22 16.9737 21.1498 17.3952C20.2996 17.8166 19.2417 16.9438 17.1259 15.198L17 15.0941" stroke="#FF8125" strokeWidth="1.5" strokeLinecap="round" />
                                 <path d="M11.5 11C12.3284 11 13 10.3284 13 9.5C13 8.67157 12.3284 8 11.5 8C10.6716 8 10 8.67157 10 9.5C10 10.3284 10.6716 11 11.5 11Z" stroke="#FF8125" strokeWidth="1.5" />
                             </svg>
-                            6 hours of video content
+                            5 hours of video content
                         </div>
                     </div>
                     <div className="flex items-center mb-6 relative overflow-hidden h-16">

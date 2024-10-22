@@ -1,10 +1,30 @@
 import icon2 from '../../assets/icons/Vector 2043.png'
-
+import axios from 'axios';
 const ContactForm = () => {
-    const handleSubmit = (e: any) => {
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log('Form submitted');
+
+        // Get form data
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData.entries());
+
+        // Graphy webhook URL (replace with your actual webhook URL)
+        const webhookUrl = 'https://sagarbabar.com/kjsoY5iw64HNksjh';
+
+        try {
+            const response = await axios.post(webhookUrl, data);
+
+            if (response.status === 200) {
+                console.log('Form submitted successfully to Graphy');
+                // Clear the form or show a success message
+            } else {
+                console.error('Form submission to Graphy failed');
+                // Show an error message to the user
+            }
+        } catch (error) {
+            console.error('Error submitting form to Graphy:', error);
+            // Show an error message to the user
+        }
     };
 
     return (
@@ -14,7 +34,7 @@ const ContactForm = () => {
                     <div className="max-w-7xl mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                             {/* Left column */}
-                            <div className="space-y-6">
+                            <div className="space-y-6 mb-32">
                                 <div className="inline-block bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold">
                                     Contact
                                 </div>
