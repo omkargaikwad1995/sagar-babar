@@ -1,31 +1,43 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import image1 from '../../assets/images/image 22.png';
+import image2 from '../../assets/images/1576872916823.jpg';
+import image3 from '../../assets/images/shivsamman.jpg';
+import image4 from '../../assets/images/Mask group.png';
 
 const AwardsAchievements = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const slides = [
-        {
-            title: "TOP TALENT Award 2007 & 2008 for leadership",
-            year: "2015",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation.",
-            image: {
-                src: image1,
-                alt: "Award Image"
-            }
-        },
+
         // Add more slides here
         {
-            title: "Another Award Title",
-            year: "2019",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation.",
+            title: "Business leader of the year",
+            year: "2021",
+            description: "Comsense Technologies, co-founded by Sagar Babar, was awarded Company of the Year at the Business Leader of the Year 2021 by The Economic Times and The World HRD Congress.",
             image: {
                 src: image1,
                 alt: "Award Image"
             }
         },
-        // ... more slides as needed
+        {
+            title: "Amplify 2017 – Meet & Greet with Will Smith",
+            year: "2017",
+            description: "At Amplify 2017, Sagar Babar had the privilege of connecting with the iconic Will Smith, gaining valuable insights and motivation from the renowned actor during an inspiring meet and greet session.",
+            image: {
+                src: image2,
+                alt: "Award Image"
+            }
+        },
+        {
+            title: "Shivsanman Award",
+            year: "2024",
+            description: "Sagar Babar received the prestigious Shivsanman Award from Sharadchandraji Pawar on the occasion of Chhatrapati Shivaji Maharaj Jayanti, honoring his outstanding contributions and achievements.",
+            image: {
+                src: image3,
+                alt: "Award Image"
+            }
+        },
     ];
 
     const handleDotClick = (index: any) => {
@@ -35,7 +47,7 @@ const AwardsAchievements = () => {
     return (
         <div className="container px-8 relative">
             <h2 className="text-xl md:text-3xl font-bold justify-center text-center mb-8">Awards & Achievements</h2>
-
+            <img src={image4} className='absolute top-0 left-0' />
             <div className="flex flex-col md:flex-row items-center justify-center">
                 <AnimatePresence mode="wait">
                     <motion.div
@@ -46,9 +58,9 @@ const AwardsAchievements = () => {
                         transition={{ duration: 0.5 }}
                         className="md:w-2/3 mb-6 md:mb-0"
                     >
-                        <h3 className="text-xl md:text-2xl font-semibold mb-2">{slides[currentSlide].title}</h3>
+                        <h3 className="text-3xl md:text-3xl font-semibold mb-2">{slides[currentSlide].title}</h3>
                         <p className="text-gray-500 mb-4">{slides[currentSlide].year}</p>
-                        <p className="text-gray-700 w-2/3">{slides[currentSlide].description}</p>
+                        <p className="text-gray-700 text-xl w-full md:w-2/3">{slides[currentSlide].description}</p>
                     </motion.div>
                 </AnimatePresence>
 

@@ -35,19 +35,14 @@ const ContactForm = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                             {/* Left column */}
                             <div className="space-y-6 mb-32">
-                                <div className="inline-block bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                                <div className="inline-block bg-blue-900 text-white px-4 py-2 rounded-full text-sm font-semibold">
                                     Contact
                                 </div>
                                 <h2 className="text-4xl font-bold">
                                     Absolutely <span className="text-orange-500">Worth it !</span>
                                 </h2>
-                                <p className="text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident.
+                                <p className="text-gray-600 text-md">
+                                    When you connect with me, you're not just making contact—you're stepping into a world of growth and opportunity. Expect personalized guidance, fast responses, and actionable strategies tailored to your unique challenges. Whether it's business insights or support for your next big step, I’m here to ensure your success. This connection is absolutely worth it!
                                 </p>
                             </div>
 

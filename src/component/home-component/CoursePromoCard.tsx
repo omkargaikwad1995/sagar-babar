@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import courseBannerimage from '../../assets/images/course banner img.png';
+import { useNavigate } from 'react-router-dom';
 
 const CoursePromoCard = () => {
     const [animationKey, setAnimationKey] = useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -11,6 +13,13 @@ const CoursePromoCard = () => {
 
         return () => clearInterval(intervalId);
     }, []);
+    const handleKnowMore = () => {
+        navigate('/course');
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smooth scrolling
+        }); // Replace '/course' with your actual course page route
+    };
 
     return (
         // <div className="bg-blue-900 rounded-xl p-4 sm:p-8 text-white relative overflow-hidden">
@@ -118,7 +127,12 @@ const CoursePromoCard = () => {
                             ₹3999
                         </span>
                     </div>
-                    <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 text-sm sm:text-base w-full sm:w-auto">Know More</button>
+                    <button
+                        onClick={handleKnowMore}
+                        className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 text-sm sm:text-base w-full sm:w-auto"
+                    >
+                        Know More
+                    </button>
                 </div>
 
                 {/* Image section */}

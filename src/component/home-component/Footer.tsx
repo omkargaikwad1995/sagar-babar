@@ -1,6 +1,7 @@
 import linkedin from '../../assets/icons/linkedin.png'
 import instagram from '../../assets/icons/instagram.png'
 import youtube from '../../assets/icons/youtube.png'
+import logo from '../../assets/images/Sagar Babar....png'
 const Footer = () => {
     const socialLinks = [
         { name: 'instagram', icon: instagram, url: "https://www.instagram.com/sagarbabar/" },
@@ -14,17 +15,41 @@ const Footer = () => {
                 <div className="container mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                         <div>
-                            <h3 className="font-bold mb-2 text-lg">Sagar Babar</h3>
-                            <p className="text-sm">Entrepreneur, Business Coach, Educator,<br />Author and Motivation Practitioner</p>
+                            <img src={logo} alt="Sagar Babar Logo" className="h-8 sm:h-10 w-auto" />
+                            <p className="text-sm mt-4">Entrepreneur, Business Coach, Educator, Author, and Meditation Practitioner with 20+ years of experience in building successful business models through continuous learning and innovation.</p>
                         </div>
-                        <div>
+                        {/* <div>
                             <h4 className="font-bold mb-2">Quick Links</h4>
                             <ul className="text-sm">
-                                <li><a href="#" className="hover:text-gray-300">Course</a></li>
-                                <li><a href="#" className="hover:text-gray-300">My Story</a></li>
-                                <li><a href="#" className="hover:text-gray-300">Contact Us</a></li>
+                                <li>
+                                    <Link
+                                        to="/course"
+                                        className="hover:text-gray-300"
+                                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                    >
+                                        Course
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="/my-story"
+                                        className="hover:text-gray-300"
+                                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                    >
+                                        My Story
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="/contact"
+                                        className="hover:text-gray-300"
+                                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                    >
+                                        Contact Us
+                                    </Link>
+                                </li>
                             </ul>
-                        </div>
+                        </div> */}
                         <div>
                             <h4 className="font-bold mb-2">Contact</h4>
                             <p className="text-sm">Email: contact@sagarbabar.com</p>
@@ -36,6 +61,7 @@ const Footer = () => {
                                     <a
                                         key={social.name}
                                         href={social.url}
+                                        target="_blank"
                                         className=""
                                     >
                                         <span className="sr-only">{social.name}</span>
@@ -49,6 +75,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    <hr className='mt-2' />
                     <div className="mt-8 text-center text-xs sm:text-sm">
                         Copyright © 2024 Sagarbabar.com. All rights reserved.
                     </div>
