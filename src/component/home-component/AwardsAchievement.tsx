@@ -58,9 +58,9 @@ const AwardsAchievements = () => {
                         transition={{ duration: 0.5 }}
                         className="md:w-2/3 mb-6 md:mb-0"
                     >
-                        <h3 className="text-3xl md:text-3xl font-semibold mb-2">{slides[currentSlide].title}</h3>
+                        <h3 className="text-xl md:text-3xl font-semibold mb-2">{slides[currentSlide].title}</h3>
                         <p className="text-gray-500 mb-4">{slides[currentSlide].year}</p>
-                        <p className="text-gray-700 text-xl w-full md:w-2/3">{slides[currentSlide].description}</p>
+                        <p className="text-gray-700 text-md md:text-xl w-full md:w-2/3">{slides[currentSlide].description}</p>
                     </motion.div>
                 </AnimatePresence>
 

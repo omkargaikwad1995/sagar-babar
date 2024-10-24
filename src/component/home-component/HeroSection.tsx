@@ -34,7 +34,7 @@ const HeroSection = () => {
                 <div className="w-full md:w-1/2 mb-8 md:mb-0">
                     <h1 className="text-2xl sm:text-3xl md:text-5xl text-gray-700 font-bold mb-4 md:w-3/4">
                         You are Never too Young to start an Empire and Never too Old to
-                        <span>Pursue a Dream<img src={line} height={150} width={150} alt="decorative line" /></span>
+                        <span> Pursue a Dream<img src={line} height={150} width={150} alt="decorative line" /></span>
                     </h1>
                     <button
                         className="bg-orange-500 text-white px-4 sm:px-6 py-2 rounded-full hover:bg-orange-600 text-sm sm:text-base"
@@ -44,8 +44,12 @@ const HeroSection = () => {
                     </button>
                     <img src={follower} alt="Follower" className="w-28 sm:w-44 mt-6 md:mt-12" />
                 </div>
-                <div className="w-full md:w-1/2 -mb-40 sm:-mb-30 bottom-0 relative fade-in-image">
-                    <img src={sagar} alt="Hero image" className="w-full h-auto rounded-lg" />
+                <div className="w-full md:w-1/2 -mb-20 sm:-mb-30 md:-mb-40 bottom-4 md:-bottom-10 relative fade-in-image">
+                    <img
+                        src={sagar}
+                        alt="Hero image"
+                        className="w-[280px] sm:w-[350px] md:w-full h-auto rounded-lg mx-auto md:mx-0"
+                    />
                 </div>
             </div>
 

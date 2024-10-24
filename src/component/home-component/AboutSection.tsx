@@ -8,8 +8,8 @@ const AboutSection = () => {
         <section className="bg-blue-900 text-white px-4 sm:px-6 md:px-10 py-10 sm:py-20">
             <div className="container grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
                 <div>
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-8">About Sagar</h2>
-                    <h1 className='mb-4 md:mb-1 sm:mb-8 text-xl md:text-xl sm:text-base font-semibold'>Hello</h1>
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-2">About Sagar</h2>
+                    <h1 className='mb-2 md:mb-1 sm:mb-8 text-xl md:text-xl sm:text-base font-semibold'>Hello</h1>
                     <div>
                         <p className='text-md'>I'm Sagar – an Entrepreneur, Business Coach, Educator, Author, and Meditation Practitioner. With over two decades of experience, I've built successful business models, setting up and running multiple ventures.</p>
                     </div>

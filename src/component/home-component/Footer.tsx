@@ -2,6 +2,7 @@ import linkedin from '../../assets/icons/linkedin.png'
 import instagram from '../../assets/icons/instagram.png'
 import youtube from '../../assets/icons/youtube.png'
 import logo from '../../assets/images/Sagar Babar....png'
+import { Link } from 'react-router-dom'
 const Footer = () => {
     const socialLinks = [
         { name: 'instagram', icon: instagram, url: "https://www.instagram.com/sagarbabar/" },
@@ -18,7 +19,7 @@ const Footer = () => {
                             <img src={logo} alt="Sagar Babar Logo" className="h-8 sm:h-10 w-auto" />
                             <p className="text-sm mt-4">Entrepreneur, Business Coach, Educator, Author, and Meditation Practitioner with 20+ years of experience in building successful business models through continuous learning and innovation.</p>
                         </div>
-                        {/* <div>
+                        <div>
                             <h4 className="font-bold mb-2">Quick Links</h4>
                             <ul className="text-sm">
                                 <li>
@@ -32,24 +33,24 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        to="/my-story"
+                                        to="/"
                                         className="hover:text-gray-300"
-                                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                        onClick={() => window.scrollTo({ top: 1100, behavior: 'smooth' })}
                                     >
                                         My Story
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        to="/contact"
+                                        to="/"
                                         className="hover:text-gray-300"
-                                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                        onClick={() => window.scrollTo({ top: 5000, behavior: 'smooth' })}
                                     >
                                         Contact Us
                                     </Link>
                                 </li>
                             </ul>
-                        </div> */}
+                        </div>
                         <div>
                             <h4 className="font-bold mb-2">Contact</h4>
                             <p className="text-sm">Email: contact@sagarbabar.com</p>

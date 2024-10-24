@@ -28,12 +28,12 @@ const HomePage = () => {
     }, [location]);
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen overflow-x-hidden"> {/* Added overflow-x-hidden */}
             <HeroSection />
             <AboutSection />
             <MyStorySection />
 
-            <section className="bg-blue-900 rounded-lg text-white m-8 md:m-14">
+            <section className="bg-blue-900 rounded-lg text-white mx-4 md:m-14"> {/* Changed m-8 to mx-4 */}
                 <CoursePromoCard />
             </section>
 
@@ -41,11 +41,11 @@ const HomePage = () => {
                 <ApproachReasons />
             </section>
 
-            <section className="py-6 sm:py-10 items-center justify-center flex px-4 sm:px-6 md:px-10">
+            <section className="py-6 sm:py-10 px-4 sm:px-6 md:px-10"> {/* Added consistent padding */}
                 <AwardsAchievements />
             </section>
 
-            <section className="sm:py-20 px-4 sm:px-6 md:px-10">
+            <section className="py-6 sm:py-20 px-4 sm:px-6 md:px-10"> {/* Added consistent padding */}
                 <FeaturedVideos />
             </section>
 

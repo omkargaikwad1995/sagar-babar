@@ -76,18 +76,20 @@ const Header = () => {
                             </li>
                         ))}
                         <li className="mt-4 lg:mt-0 lg:ml-6">
-                            <Link
-                                to="/login"
+
+                            <a href="https://course.sagarbabar.com/s/authenticate?url=/t/activecourses"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Course Login
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 };
 

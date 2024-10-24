@@ -87,16 +87,17 @@ const CoursePromoCard = () => {
                 {/* Content section */}
                 <div className="p-6 sm:p-8 lg:w-3/5">
                     <span className='text-sm sm:text-base lg:text-xl font-light bg-blue-800 px-4 py-1 sm:px-6 sm:py-2 rounded-full inline-block mb-4 sm:mb-8'>Course</span>
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-orange-400 font-bold">How to Start Business: </h2>
-                    <h2 className='text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4'>Learn Basics</h2>
-                    <p className="mb-6 text-sm sm:text-base text-gray-300 line-clamp-3 sm:line-clamp-none">
+                    <p className='text-sm sm:text-2xl lg:text-xl font-bold mb-4'>"Maharashtra's first-ever business course in Marathi."</p>
+                    <h2 className="text-xl sm:text-2xl lg:text-5xl text-orange-400 font-bold">How to Start Business: </h2>
+                    <h2 className='text-xl sm:text-2xl lg:text-5xl font-bold text-white mb-2 md:mb-4'>Learn Basics</h2>
+                    <p className="mb-6 text-sm sm:text-lg text-gray-300 ">
                         Dive into the world of entrepreneurship with our
                         comprehensive 15-chapter course, designed
                         specifically for Marathi businessmen. This course will
                         equip you with the knowledge and practical skills to
                         take your business to the next level!
                     </p>
-                    <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 mb-6 text-sm sm:text-base text-white">
+                    <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 mb-6 text-sm sm:text-lg text-white">
                         <div className="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" className='border rounded-sm border-gray-400 mr-2' width="18" height="18" viewBox="0 0 24 24" fill="none">
                                 <path d="M16.6127 16.0847C13.9796 17.5678 12.4773 20.641 12 21.5001V8.00005C12.4145 7.25401 13.602 5.11651 15.6317 3.66373C16.4868 3.05172 16.9143 2.74571 17.4572 3.02473C18 3.30376 18 3.91968 18 5.15151V13.9915C18 14.6569 18 14.9896 17.8634 15.2234C17.7267 15.4572 17.3554 15.6664 16.6127 16.0847Z" stroke="#FF8125" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -113,7 +114,7 @@ const CoursePromoCard = () => {
                             5 hours of video content
                         </div>
                     </div>
-                    <div className="flex items-center mb-6 relative overflow-hidden h-16">
+                    <div className="flex items-center mb-0 md:mb-4 relative overflow-hidden h-16">
                         <span
                             key={`new-price-${animationKey}`}
                             className="text-xl sm:text-2xl lg:text-3xl font-bold mr-2 text-white animate-slide-in"

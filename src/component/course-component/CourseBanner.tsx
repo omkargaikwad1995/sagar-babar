@@ -1,4 +1,4 @@
-import courseBannerimage2 from '../../assets/images/course banner low.jpg';
+import courseBannerimage2 from '../../assets/images/course cover red.png';
 
 const HeroSection = () => {
     return (
@@ -21,9 +21,14 @@ const HeroSection = () => {
                         </p>
 
                         <div className="flex flex-wrap items-center gap-4 mb-6">
-                            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 rounded-full transition duration-300 text-sm sm:text-base whitespace-nowrap">
+                            <a
+                                href="https://course.sagarbabar.com/courses/How-to-start-business-670e02c79bdcdb5ec721dd0e-670e02c79bdcdb5ec721dd0e"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 rounded-full transition duration-300 text-sm sm:text-base whitespace-nowrap"
+                            >
                                 Enroll Now
-                            </button>
+                            </a>
 
                             <div className="flex items-center gap-4">
                                 <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-black">
