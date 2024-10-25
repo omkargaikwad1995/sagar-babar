@@ -101,12 +101,14 @@ const WhatYoullLearn = () => {
                                     zIndex: index + 1 // Reverse stacking order
                                 }}
                             >
-                                <div className=" flex-col sm:flex-row items-center sm:items-start gap-4 lg:gap-6">
-                                    <img
-                                        src={card.icon}
-                                        alt={card.title}
-                                        className="w-12 bg-blue-900 p-2 rounded-sm h-12 shrink-0"
-                                    />
+                                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 lg:gap-6">
+                                    <div className="flex flex-col items-center sm:items-start">
+                                        <img
+                                            src={card.icon}
+                                            alt={card.title}
+                                            className="w-20 md:w-24 bg-blue-900 p-1 rounded-sm h-16 md:h-18 shrink-0 mb-3 sm:mb-0"
+                                        />
+                                    </div>
                                     <div className="text-center sm:text-left">
                                         <h3 className="font-bold text-lg mb-2">{card.title}</h3>
                                         <p className="text-sm text-gray-600">{card.description}</p>

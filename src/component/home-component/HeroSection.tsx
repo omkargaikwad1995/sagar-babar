@@ -48,6 +48,7 @@ const HeroSection = () => {
                     <img
                         src={sagar}
                         alt="Hero image"
+                        loading="lazy"
                         className="w-[280px] sm:w-[350px] md:w-full h-auto rounded-lg mx-auto md:mx-0"
                     />
                 </div>

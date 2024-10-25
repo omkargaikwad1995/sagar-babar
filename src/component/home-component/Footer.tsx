@@ -2,13 +2,36 @@ import linkedin from '../../assets/icons/linkedin.png'
 import instagram from '../../assets/icons/instagram.png'
 import youtube from '../../assets/icons/youtube.png'
 import logo from '../../assets/images/Sagar Babar....png'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 const Footer = () => {
     const socialLinks = [
         { name: 'instagram', icon: instagram, url: "https://www.instagram.com/sagarbabar/" },
         { name: 'linkedin', icon: linkedin, url: "https://www.linkedin.com/in/sagarbabar" },
         { name: 'youtube', icon: youtube, url: "https://youtube.com/@sagarbabar_" },
     ];
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleNavigation = (sectionId: any) => {
+        if (location.pathname !== '/') {
+            // If we're not on home page, store the section to scroll to
+            localStorage.setItem('scrollToSection', sectionId);
+            navigate('/');
+        } else {
+            // If we're already on home page, just scroll
+            const element = document.getElementById(sectionId);
+            if (element) {
+                const offset = window.innerWidth < 768 ? 80 : 100;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    };
     return (
         <div>
             {/* Footer */}
@@ -32,22 +55,20 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link
-                                        to="/"
+                                    <button
                                         className="hover:text-gray-300"
-                                        onClick={() => window.scrollTo({ top: 1100, behavior: 'smooth' })}
+                                        onClick={() => handleNavigation('my-story-section')}
                                     >
                                         My Story
-                                    </Link>
+                                    </button>
                                 </li>
                                 <li>
-                                    <Link
-                                        to="/"
+                                    <button
                                         className="hover:text-gray-300"
-                                        onClick={() => window.scrollTo({ top: 5000, behavior: 'smooth' })}
+                                        onClick={() => handleNavigation('contact-form-section')}
                                     >
                                         Contact Us
-                                    </Link>
+                                    </button>
                                 </li>
                             </ul>
                         </div>
