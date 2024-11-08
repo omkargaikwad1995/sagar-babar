@@ -81,7 +81,7 @@ const MyStorySection = () => {
                         <div className="relative pt-[56.25%] w-full">
                             <iframe
                                 className="absolute inset-0 w-full h-full"
-                                src="https://www.youtube.com/embed/zi2pIe3eZHw"
+                                src="https://www.youtube.com/embed/QqyAuIU_rAc?si=dHHf85dbb9WlfVTv"
                                 title="YouTube video"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
