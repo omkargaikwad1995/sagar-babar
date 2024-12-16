@@ -88,8 +88,8 @@ const CoursePromoCard = () => {
                 <div className="p-6 sm:p-8 lg:w-3/5">
                     <span className='text-sm sm:text-base lg:text-xl font-light bg-blue-800 px-4 py-1 sm:px-6 sm:py-2 rounded-full inline-block mb-4 sm:mb-8'>Course</span>
                     <p className='text-sm sm:text-2xl lg:text-xl font-bold mb-4'>"Maharashtra's first-ever business course in Marathi."</p>
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-orange-400 font-bold">Start and Grow Your Business with </h2>
-                    <h2 className='text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-4'>Expert Guidance in Marathi</h2>
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-orange-400 font-bold">From Zero to a 2 Crore Business: </h2>
+                    <h2 className='text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-4'>A Path to Success</h2>
                     <p className="mb-6 text-sm sm:text-lg text-gray-300 ">
                         Dive into the world of entrepreneurship with our
                         comprehensive 15-chapter course, designed

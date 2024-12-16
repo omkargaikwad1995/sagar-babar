@@ -5,6 +5,7 @@ import WhyThisCourse from "../component/course-component/WhyThisCourse"
 import mystorybg from '../assets/images/Group.png'
 import cover from '../assets/images/Group 351.jpg'
 import MeetYourMentor from "../component/course-component/MeetYourMentor"
+import FAQAccordion from "../component/course-component/FAQAccordion"
 
 const Courses = () => {
     return (
@@ -31,6 +32,9 @@ const Courses = () => {
             </section>
             <section>
                 <MeetYourMentor />
+            </section>
+            <section className="bg-blue-900">
+                <FAQAccordion />
             </section>
         </div>
     )

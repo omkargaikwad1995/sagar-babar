@@ -1,4 +1,4 @@
-import courseBannerimage2 from '../../assets/images/course cover red.png';
+import courseBannerimage2 from '../../assets/images/Group 1000006521.svg';
 
 const HeroSection = () => {
     return (
@@ -9,9 +9,9 @@ const HeroSection = () => {
                     <div className="w-full lg:w-1/2 p-4 sm:p-6 md:p-8">
                         <h3><span className="text-blue-900 font-semibold">"Maharashtra's first-ever business course in Marathi."</span></h3>
                         <h1 className="text-2xl sm:text-3xl lg:text-4xl mt-2 xl:text-5xl font-bold text-blue-900 mb-4 md:mb-6">
-                            Start and Grow Your Business with{' '}
-                            <span className="text-orange-500">Expert Guidance</span>{' '}
-                            in Marathi
+                            From Zero to a 2 Crore Business:{' '}
+                            <span className="text-orange-500">A Path to Success</span>{' '}
+
                         </h1>
 
                         <p className="mb-6 text-gray-600 text-sm sm:text-base md:text-lg">

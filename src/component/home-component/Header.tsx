@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Globe, Menu, X } from 'lucide-react';
 import cover from '../../assets/images/Group 351.jpg'
 import logo from '../../assets/images/Sagar Babar....png'
 
@@ -8,6 +8,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
+    const [language, setLanguage] = useState('EN');
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -28,6 +29,10 @@ const Header = () => {
             contactSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
+
+    const toggleLanguage = () => {
+        setLanguage(prevLang => prevLang === "EN" ? "MR" : "EN")
+    }
 
     useEffect(() => {
         const shouldScroll = localStorage.getItem('scrollToContact');
@@ -105,6 +110,15 @@ const Header = () => {
                                 )}
                             </li>
                         ))}
+                        <li className="mb-8 lg:mb-0 lg:ml-6">
+                            <button
+                                onClick={toggleLanguage}
+                                className="flex items-center space-x-1 text-white hover:text-orange-500 transition duration-300"
+                            >
+                                <Globe size={20} />
+                                <span>{language}</span>
+                            </button>
+                        </li>
                         <li className="mt-4 lg:mt-0 lg:ml-6">
 
                             <a href="https://course.sagarbabar.com/s/authenticate?url=/t/activecourses"
