@@ -1,5 +1,9 @@
 export interface TranslationResource {
     language_name: string;
+    navHome: string;
+    navCourse: string;
+    navContact: string;
+    navLogin: string;
     heroTitle1: string;
     heroTitle2: string;
     askHow: string;

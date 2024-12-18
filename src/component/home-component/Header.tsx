@@ -4,12 +4,14 @@ import { Menu, X } from 'lucide-react';
 import cover from '../../assets/images/Group 351.jpg'
 import logo from '../../assets/images/Sagar Babar....png'
 import LanguageSwitcher from '../../services/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 import '../../services/index';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
+    const { t } = useTranslation();
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -47,9 +49,9 @@ const Header = () => {
     };
 
     const navItems = [
-        { name: 'Home', path: '/' },
-        { name: 'Course', path: '/course' },
-        { name: 'Contact', onClick: handleContactClick, isContact: true },
+        { name: t('navHome'), path: '/' },
+        { name: t('navCourse'), path: '/course' },
+        { name: t('navContact'), onClick: handleContactClick, isContact: true },
     ];
     return (
         <nav className="relative text-white px-4 sm:px-6 md:px-10 py-4 z-50">
@@ -116,7 +118,7 @@ const Header = () => {
                                 className="inline-block bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition duration-300 text-lg lg:text-base lg:px-4 lg:py-2"
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                Course Login
+                                {t('navLogin')}
                             </a>
                         </li>
                     </ul>

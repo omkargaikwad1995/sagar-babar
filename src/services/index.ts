@@ -13,6 +13,10 @@ const resources: {
         translation: {
             language_name: "English",
             // Hero Section
+            navHome: "Home",
+            navCourse: "Course",
+            navContact: "Contact",
+            navLogin: "Course Login",
             heroTitle1: "You are Never too Young to start an Empire and Never too Old to",
             heroTitle2: "Pursue a Dream",
             askHow: "Ask me how",
@@ -140,6 +144,10 @@ const resources: {
     mr: {
         translation: {
             language_name: "मराठी",
+            navHome: "मुख्यपृष्ठ",
+            navCourse: "कोर्स",
+            navContact: "संपर्क",
+            navLogin: "कोर्स लॉगिन",
             heroTitle1: "साम्राज्य उभारण्यासाठी तुम्ही कधीच खूप लहान नसता, आणि स्वप्नं पूर्ण करण्यासाठी कधीच",
             heroTitle2: "खूप मोठे नसता.",
             aboutUs: "आमच्याबद्दल",
