@@ -4,35 +4,37 @@ import image1 from '../../assets/images/image 22.png';
 import image2 from '../../assets/images/1576872916823.jpg';
 import image3 from '../../assets/images/shivsamman.jpg';
 import image4 from '../../assets/images/Mask group.png';
+import { useTranslation } from 'react-i18next';
 
 const AwardsAchievements = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const { t } = useTranslation();
 
     const slides = [
 
         // Add more slides here
         {
-            title: "Business leader of the year",
-            year: "2021",
-            description: "Comsense Technologies, co-founded by Sagar Babar, was awarded Company of the Year at the Business Leader of the Year 2021 by The Economic Times and The World HRD Congress.",
+            title: t('award1Title'),
+            year: t('award1Year'),
+            description: t('award1Description'),
             image: {
                 src: image1,
                 alt: "Award Image"
             }
         },
         {
-            title: "Amplify 2017 – Meet & Greet with Will Smith",
-            year: "2017",
-            description: "At Amplify 2017, Sagar Babar had the privilege of connecting with the iconic Will Smith, gaining valuable insights and motivation from the renowned actor during an inspiring meet and greet session.",
+            title: t('award2Title'),
+            year: t('award2Year'),
+            description: t('award2Description'),
             image: {
                 src: image2,
                 alt: "Award Image"
             }
         },
         {
-            title: "Shivsanman Award",
-            year: "2024",
-            description: "Sagar Babar received the prestigious Shivsanman Award from Sharadchandraji Pawar on the occasion of Chhatrapati Shivaji Maharaj Jayanti, honoring his outstanding contributions and achievements.",
+            title: t('award3Title'),
+            year: t('award3Year'),
+            description: t('award3Description'),
             image: {
                 src: image3,
                 alt: "Award Image"
@@ -46,7 +48,7 @@ const AwardsAchievements = () => {
 
     return (
         <div className="container px-8 relative">
-            <h2 className="text-xl md:text-3xl font-bold justify-center text-center mb-8">Awards & Achievements</h2>
+            <h2 className="text-xl md:text-3xl font-bold justify-center text-center mb-8">{t('awards')}</h2>
             <img src={image4} className='absolute top-0 left-0' />
             <div className="flex flex-col md:flex-row items-center justify-center">
                 <AnimatePresence mode="wait">

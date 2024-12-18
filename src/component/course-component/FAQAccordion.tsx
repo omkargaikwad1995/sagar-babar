@@ -1,5 +1,6 @@
 import { Plus } from 'lucide-react';
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 
 interface FAQItem {
     question: string;
@@ -42,68 +43,69 @@ const parseAnswer = (text: string) => {
     return parts;
 };
 
-const faqData: FAQItem[] = [
-    {
-        question: 'Is this course online or offline?',
-        answer: "Yes, this course is entirely online. You will receive recorded sessions and access to doubt-solving workshops. Additionally, there will be a live workshop."
-    },
-    {
-        question: 'Is there an age limit for this course?',
-        answer: "No, there is no age limit. This course is beneficial for anyone who wants to start or grow their business."
-    },
-    {
-        question: "Is there lifetime access to the course?",
-        answer: "Yes, you will have lifetime access to this course on how to start and grow a business."
-    },
-    {
-        question: "Can this course be accessed on mobile?",
-        answer: "Yes, you can access this course on any device, including mobile, laptop, or tablet."
-    },
-    {
-        question: "Will I receive a certificate upon course completion?",
-        answer: "Yes, you will receive a certificate after completing the course."
-    },
-    {
-        question: "Can I download the worksheets in the course?",
-        answer: "Yes, you can download all the worksheets provided in this course."
-    },
-    {
-        question: "Can this course be accessed at any time?",
-        answer: "Yes, you can access this course anytime that is convenient for you."
-    },
-    {
-        question: "Is the course only available online? Can I download the videos if I have network issues?",
-        answer: "Yes, the course is online only, and video downloads are not available. A stable network connection is required. However, you can download the worksheets to solve them offline."
-    },
-    {
-        question: "Will I get personal guidance from Sagar Sir if I enroll in this course?",
-        answer: "Yes, you will receive complete guidance from Sagar Sir in this course. You can directly ask questions during the online workshop and also reach out via email."
-    },
-    {
-        question: "Can I join the course without an email?",
-        answer: "No, an email address is required to join the course."
-    },
-    {
-        question: "How do I join the course?",
-        answer: "For more information on how to join the course, please check this [demo video](https://youtu.be/UWUllzpfLho)."
-    },
-    {
-        question: "Is there a WhatsApp support number for course members?",
-        answer: "We do not have a WhatsApp support number. If you have any questions, feel free to reach out via email or the doubt session provided with the course."
-    },
-    {
-        question: "I've made the payment; how do I start the course?",
-        answer: "You can watch the [demo video](https://youtu.be/UWUllzpfLho) to understand how to access the course."
-    }
-]
 
-const FAQAccordion = () => {
+
+const FAQAccordion: React.FC = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
-
+    const { t } = useTranslation();
+    const faqData: FAQItem[] = [
+        {
+            question: t('q1'),
+            answer: t('a1')
+        },
+        {
+            question: t('q2'),
+            answer: t('a2')
+        },
+        {
+            question: t('q3'),
+            answer: t('a3')
+        },
+        {
+            question: t('q4'),
+            answer: t('a4')
+        },
+        {
+            question: t('q5'),
+            answer: t('a5')
+        },
+        {
+            question: t('q6'),
+            answer: t('a6')
+        },
+        {
+            question: t('q7'),
+            answer: t('a7')
+        },
+        {
+            question: t('q8'),
+            answer: t('a8')
+        },
+        {
+            question: t('q9'),
+            answer: t('a9')
+        },
+        {
+            question: t('q10'),
+            answer: t('a10')
+        },
+        {
+            question: t('q11'),
+            answer: t('a11')
+        },
+        {
+            question: t('q12'),
+            answer: t('a12')
+        },
+        {
+            question: t('q13'),
+            answer: t('a13')
+        }
+    ]
     return (
         <div className="w-full max-w-4xl mx-auto p-6 space-y-4">
             <h1 className="text-4xl font-bold text-center mb-8 text-orange-500">
-                FREQUENTLY ASKED QUESTIONS
+                {t('faqTitle')}
             </h1>
 
             {faqData.map((faq, index) => (
@@ -126,8 +128,8 @@ const FAQAccordion = () => {
 
                     <div
                         className={`grid transition-all duration-300 ease-in-out ${openIndex === index
-                                ? 'grid-rows-[1fr] opacity-100'
-                                : 'grid-rows-[0fr] opacity-0'
+                            ? 'grid-rows-[1fr] opacity-100'
+                            : 'grid-rows-[0fr] opacity-0'
                             }`}
                     >
                         <div className="overflow-hidden">

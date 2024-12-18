@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface ReasonCardProps {
     number: number;
@@ -49,42 +50,42 @@ const ReasonCard = ({ number, title, description, isBlue }: ReasonCardProps) => 
 };
 
 const ApproachReasons = () => {
+    const { t } = useTranslation();
     const reasons = [
         {
-            title: "Starting your own business",
-            description: "If you wish to start your own business but are unclear on how to methodically approach your vision, I can guide you through the process, making you aware of the finer nuances and aid you through your journey.",
+            title: t('reasonTitle1'),
+            description: t('reasonDesc1'),
             isBlue: false
         },
         {
-            title: "Need motivation for your employees",
-            description: "There is no better motivator than the one who has seen it, been through it, and survived it successfully. I conduct targeted sessions for motivating the employees and aiding them in enhancing their performance.",
+            title: t('reasonTitle2'),
+            description: t('reasonDesc2'),
             isBlue: true
         },
         {
-            title: "Pondering over quitting that job to start on your own?",
-            description: "Many of us wish to be entrepreneurs but most are stuck in the risks of quitting that steady job. If you have an idea but not enough courage to take the leap, I can help you provide transparent and constructive feedback and guidance on if, when, and how to take that leap.",
+            title: t('reasonTitle3'),
+            description: t('reasonDesc3'),
             isBlue: false
         },
         {
-            title: "A failed business that you wish to restart",
-            description: "Started a venture but it did not work? Worry not, I help businesses re-start and assist entrepreneurs become forward looking.",
+            title: t('reasonTitle4'),
+            description: t('reasonDesc4'),
             isBlue: true
-        },
-        {
-            title: "Business on a plateau; need to tread the growth path",
-            description: "All businesses reach a plateau but the only way to leave a legacy is to constantly endeavor a rising chart. I help entrepreneurs break the barriers and achieve phenomenal growth",
+        }, {
+            title: t('reasonTitle5'),
+            description: t('reasonDesc5'),
             isBlue: false
         },
         {
-            title: "Seeking a Leadership Skills Speaker for Workplaces, Universities, or Specialized Forums?",
-            description: "I enjoy sharing insights and practical experiences with emerging leaders to help them maximize their potential. My mission is to create 1,000 business leaders. If you need a speaker for a leadership session, feel free to reach out.",
+            title: t('reasonTitle6'),
+            description: t('reasonDesc6'),
             isBlue: true
         }
     ];
 
     return (
         <div className="container mx-auto px-4">
-            <h2 className="text-xl sm:text-3xl font-bold text-center mb-8">Top 6 Reasons To Approach Me</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-center mb-8">{t('reasons')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {reasons.map((reason, index) => (
                     <ReasonCard

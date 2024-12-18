@@ -5,10 +5,12 @@ import line from '../../assets/images/Group 370.png';
 import follower from '../../assets/images/Group 353.png';
 import orange from '../../assets/images/orange gradient rectangle.png';
 import bottom from '../../assets/images/Vector 14.png';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
     const navigate = useNavigate();
     const location = useLocation();
+    const { t } = useTranslation();
 
     const handleAskMeHowClick = (e: any) => {
         e.preventDefault();
@@ -32,15 +34,15 @@ const HeroSection = () => {
             <img src={cover} alt="Hero background" className="absolute inset-0 w-full h-full object-cover z-0" />
             <div className="container mx-auto flex flex-col md:flex-row items-center relative z-10 px-4 sm:px-6 md:px-10">
                 <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                    <h1 className="text-2xl sm:text-3xl md:text-5xl text-gray-700 font-bold mb-4 md:w-3/4">
-                        You are Never too Young to start an Empire and Never too Old to
-                        <span> Pursue a Dream<img src={line} height={150} width={150} alt="decorative line" /></span>
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl text-gray-700 font-bold mb-4 md:w-3/4">
+                        {t('heroTitle1')}
+                        <span> {t('heroTitle2')}<img src={line} height={150} width={150} alt="decorative line" /></span>
                     </h1>
                     <button
                         className="bg-orange-500 text-white px-4 sm:px-6 py-2 rounded-full hover:bg-orange-600 text-sm sm:text-base"
                         onClick={handleAskMeHowClick}
                     >
-                        Ask me how
+                        {t('askHow')}
                     </button>
                     <img src={follower} alt="Follower" className="w-28 sm:w-44 mt-6 md:mt-12" />
                 </div>

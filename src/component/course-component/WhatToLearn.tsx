@@ -4,9 +4,11 @@ import MarketResearchIcon from '../../assets/icons/Group 1000006525.svg';
 import CashFlowIcon from '../../assets/icons/Group 1000006527.svg';
 import MarketingIcon from '../../assets/icons/Group 1000006528.svg';
 import CustomerServiceIcon from '../../assets/icons/Group 1000006525.svg';
+import { useTranslation } from 'react-i18next';
 
 const WhatYoullLearn = () => {
     const cardsRef = useRef<HTMLDivElement[]>([]);
+    const { t } = useTranslation();
 
     useEffect(() => {
         const observerOptions = {
@@ -38,28 +40,28 @@ const WhatYoullLearn = () => {
     const cards = [
         {
             icon: BusinessIcon,
-            title: "Business Planning & Strategy",
-            description: "Learn how to create a solid business plan and develop effective strategies."
+            title: t('businessTitle'),
+            description: t('businessDescription')
         },
         {
             icon: MarketResearchIcon,
-            title: "Market Research & Niche Identification",
-            description: "Discover techniques for market analysis and finding your unique niche."
+            title: t('marketResearchTitle'),
+            description: t('marketResearchDescription')
         },
         {
             icon: CashFlowIcon,
-            title: "Cash flow Management",
-            description: "Master the essentials of managing your business finances effectively."
+            title: t('cashFlowTitle'),
+            description: t('cashFlowDescription')
         },
         {
             icon: MarketingIcon,
-            title: "Marketing & Sales Growth",
-            description: "Explore strategies to boost your marketing efforts and increase sales."
+            title: t('marketingTitle'),
+            description: t('marketingDescription')
         },
         {
             icon: CustomerServiceIcon,
-            title: "Customer Service Excellence",
-            description: "Learn how to provide outstanding customer service to retain and grow your client base."
+            title: t('customerServiceTitle'),
+            description: t('customerServiceDescription')
         }
     ];
 
@@ -70,14 +72,13 @@ const WhatYoullLearn = () => {
                 <div className="w-full lg:w-1/2 px-4 lg:min-h-screen  lg:mb-0">
                     <div className="lg:sticky lg:top-1/3 p-4 lg:p-6">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6">
-                            What <br className="hidden lg:block" />
-                            <span className="text-orange-500">You'll Learn</span>
+                            {t('whatYoullLearnHeading1')} <br className="hidden lg:block" />
+                            <span className="text-orange-500 block mt-2 sm:mt-3 lg:mt-4">
+                                {t('whatYoullLearnHeading2')}
+                            </span>
                         </h2>
                         <p className="text-gray-600 text-base lg:text-lg">
-                            In this course on "How to Start a Business," you'll learn to create a solid business plan,
-                            conduct market research, and identify your niche. Master cash flow management and explore
-                            effective marketing and sales strategies. Additionally, discover how to provide excellent
-                            customer service to retain and grow your client base.
+                            {t('whatYoullLearnDescription')}
                         </p>
                     </div>
                 </div>

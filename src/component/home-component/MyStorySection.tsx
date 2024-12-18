@@ -3,9 +3,11 @@ import { Award, Boxes, Eye, Handshake, Play } from 'lucide-react';
 import mystoryImange from '../../assets/images/image 28.png';
 import mystorybg from '../../assets/images/Group.png';
 import journeyicon from '../../assets/icons/Customer Journey.svg';
+import { useTranslation } from 'react-i18next';
 
 const MyStorySection = () => {
     const [showVideo, setShowVideo] = useState(false);
+    const { t } = useTranslation();
 
     const toggleVideo = () => {
         setShowVideo(!showVideo);
@@ -19,7 +21,7 @@ const MyStorySection = () => {
             </div>
 
             <div className="container mx-auto relative z-10">
-                <h2 className="text-xl sm:text-3xl font-bold text-center mb-8 flex items-center justify-center text-black">My Story <img src={journeyicon} height={24} width={24} className='ml-2' alt="" /></h2>
+                <h2 className="text-xl sm:text-3xl font-bold text-center mb-8 flex items-center justify-center text-black">{t('myStory')} <img src={journeyicon} height={24} width={24} className='ml-2' alt="" /></h2>
 
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="w-full md:w-1/2 mb-8 md:mb-0">
@@ -45,24 +47,24 @@ const MyStorySection = () => {
                     </div>
                     <div className="w-full md:w-1/2 ">
                         <h3 className="text-xl md:text-4xl font-bold mb-4 text-black">
-                            Take A Peek Into My Life And Discover The Various Facts That Made Me One Of The Top Business Leaders In 2021.
+                            {t('storyHeading')}
                         </h3>
                         <ul className="space-y-4 text-black font-semibold text-sm sm:text-base">
                             <li className="flex items-center">
                                 <span className="text-orange-500 mr-2 text-xl bg-gray-200 rounded-full p-2"><Eye /></span>
-                                100+ Million Views
+                                {t('views')}
                             </li>
                             <li className="flex items-center">
                                 <span className="text-orange-500 mr-2 text-xl bg-gray-200 rounded-full p-2"><Handshake /></span>
-                                Only Marathi Small Business Owner's Coach
+                                {t('BusinessCoach')}
                             </li>
                             <li className="flex items-center">
                                 <span className="text-orange-500 mr-2 text-xl bg-gray-200 rounded-full p-2"><Boxes /></span>
-                                Top 100 Leader Impact
+                                {t('topLeader')}
                             </li>
                             <li className="flex items-center">
                                 <span className="text-orange-500 mr-2 text-xl bg-gray-200 rounded-full p-2"><Award /></span>
-                                IBM Best partner award to Comsense
+                                {t('partnerAward')}
                             </li>
                         </ul>
                     </div>

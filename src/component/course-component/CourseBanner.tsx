@@ -1,21 +1,24 @@
 import courseBannerimage2 from '../../assets/images/Group 1000006521.svg';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+    const { t } = useTranslation();
     return (
         <section className="p-4 sm:p-6 md:p-8 lg:p-12">
             <div className="bg-white shadow-2xl rounded-xl overflow-hidden">
                 <div className="flex flex-col lg:flex-row">
                     {/* Content Section */}
                     <div className="w-full lg:w-1/2 p-4 sm:p-6 md:p-8">
-                        <h3><span className="text-blue-900 font-semibold">"Maharashtra's first-ever business course in Marathi."</span></h3>
+                        <h3><span className="text-blue-900 font-semibold">{t('courseTagline')}</span></h3>
                         <h1 className="text-2xl sm:text-3xl lg:text-4xl mt-2 xl:text-5xl font-bold text-blue-900 mb-4 md:mb-6">
-                            From Zero to a 2 Crore Business:{' '}
-                            <span className="text-orange-500">A Path to Success</span>{' '}
-
+                            {t('courseTitle1')}
+                            <span className="text-orange-500 block mt-2 sm:mt-3 lg:mt-3">
+                                {t('courseTitle2')}
+                            </span>
                         </h1>
 
                         <p className="mb-6 text-gray-600 text-sm sm:text-base md:text-lg">
-                            Dive into the world of entrepreneurship with our comprehensive <span className='font-semibold text-black'>15-chapter course, designed specifically for Marathi businessmen.</span> This course will equip you with the knowledge and practical skills to take your business to the next level!
+                            {t('courseDesc1')} <span className='font-semibold text-black'>{t('courseDesc2')}</span> {t('courseDesc3')}
                         </p>
 
                         <div className="flex flex-wrap items-center gap-4 mb-6">

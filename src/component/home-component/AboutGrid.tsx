@@ -2,15 +2,17 @@ import entrepreneurImage from '../../assets/images/Group 363.png';
 import coachImage from '../../assets/images/Group 363.png';
 import educatorImage from '../../assets/images/Group 363.png';
 import speakerImage from '../../assets/images/Group 363.png';
+import { useTranslation } from 'react-i18next';
 
 const AboutGrid = () => {
+    const { t } = useTranslation();
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-                { image: entrepreneurImage, alt: "Entrepreneur", title: "Entrepreneur", description: "Built his base on entrepreneurship and CEO of multiple companies." },
-                { image: coachImage, alt: "Business Coach", title: "Business Coach", description: "Help you learn startup, funding, and business development." },
-                { image: educatorImage, alt: "Educator", title: "Educator", description: "Taught 1000+ students entrepreneurship and startup skills." },
-                { image: speakerImage, alt: "Speaker", title: "Speaker", description: "Spoke at 100+ events and motivate young entrepreneurs." }
+                { image: entrepreneurImage, alt: "Entrepreneur", title: t('entrepreneur'), description: t('entrepreneurDesc') },
+                { image: coachImage, alt: "Business Coach", title: t('businessCoach'), description: t('businessCoachDesc') },
+                { image: educatorImage, alt: "Educator", title: t('educator'), description: t('educatorDesc') },
+                { image: speakerImage, alt: "Speaker", title: t('speaker'), description: t('speakerDesc') }
             ].map((item, index) => (
                 <div key={index} className="bg-white p-4 rounded-lg flex flex-col justify-center items-center h-auto sm:h-52 border-2 border-orange-500 w-full transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
                     <img

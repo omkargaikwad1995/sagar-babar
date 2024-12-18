@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      marathi: ['Noto Sans Devanagari', 'sans-serif'],
+    },
   },
   plugins: [],
 }

@@ -3,6 +3,7 @@ import * as Yup from 'yup';
 import { useState } from 'react';
 import icon2 from '../../assets/icons/Vector 2043.png';
 import { toast } from 'react-hot-toast';
+import { useTranslation, UseTranslationOptions } from 'react-i18next';
 
 // Access environment variables correctly in React
 const SMTP2GO_CONFIG = {
@@ -139,6 +140,7 @@ const SuccessDialog = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
 const ContactForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showSuccessDialog, setShowSuccessDialog] = useState(false);
+    const { t } = useTranslation();
 
     const validationSchema = Yup.object({
         firstName: Yup.string()
@@ -200,13 +202,10 @@ const ContactForm = () => {
                                     Contact
                                 </div>
                                 <h2 className="text-3xl md:text-5xl font-bold">
-                                    Absolutely <span className="text-orange-500">Worth it !</span>
+                                    {t('absolutly1')} <span className="text-orange-500">{t('worth')}</span>
                                 </h2>
                                 <p className="text-gray-600 text-md">
-                                    When you connect with me, you're not just making contact—you're stepping into a world of growth and opportunity.
-                                    Expect personalized guidance, fast responses, and actionable strategies tailored to your unique challenges.
-                                    Whether it's business insights or support for your next big step, I'm here to ensure your success.
-                                    This connection is absolutely worth it!
+                                    {t('contactDesc')}
                                 </p>
                             </div>
 

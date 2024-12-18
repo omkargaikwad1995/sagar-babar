@@ -3,6 +3,7 @@ import instagram from '../../assets/icons/instagram.png'
 import youtube from '../../assets/icons/youtube.png'
 import logo from '../../assets/images/Sagar Babar....png'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 const Footer = () => {
     const socialLinks = [
         { name: 'instagram', icon: instagram, url: "https://www.instagram.com/sagarbabar/" },
@@ -11,7 +12,7 @@ const Footer = () => {
     ];
     const navigate = useNavigate();
     const location = useLocation();
-
+    const { t } = useTranslation();
     const handleNavigation = (sectionId: any) => {
         if (location.pathname !== '/') {
             // If we're not on home page, store the section to scroll to
@@ -40,7 +41,7 @@ const Footer = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                         <div>
                             <img src={logo} alt="Sagar Babar Logo" className="h-8 sm:h-10 w-auto" />
-                            <p className="text-sm mt-4">Entrepreneur, Business Coach, Educator, Author, and Meditation Practitioner with 20+ years of experience in building successful business models through continuous learning and innovation.</p>
+                            <p className="text-sm mt-4">{t('footerDesc')}</p>
                         </div>
                         <div>
                             <h4 className="font-bold mb-2">Quick Links</h4>

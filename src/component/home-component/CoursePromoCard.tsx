@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import courseBannerimage from '../../assets/images/course banner img.png';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const CoursePromoCard = () => {
     const [animationKey, setAnimationKey] = useState(0);
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -86,16 +88,12 @@ const CoursePromoCard = () => {
             <div className="flex flex-col lg:flex-row">
                 {/* Content section */}
                 <div className="p-6 sm:p-8 lg:w-3/5">
-                    <span className='text-sm sm:text-base lg:text-xl font-light bg-blue-800 px-4 py-1 sm:px-6 sm:py-2 rounded-full inline-block mb-4 sm:mb-8'>Course</span>
-                    <p className='text-sm sm:text-2xl lg:text-xl font-bold mb-4'>"Maharashtra's first-ever business course in Marathi."</p>
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-orange-400 font-bold">From Zero to a 2 Crore Business: </h2>
-                    <h2 className='text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-4'>A Path to Success</h2>
+                    <span className='text-sm sm:text-base lg:text-xl font-light bg-blue-800 px-4 py-1 sm:px-6 sm:py-2 rounded-full inline-block mb-4 sm:mb-8'>{t('course')}</span>
+                    <p className='text-sm sm:text-2xl lg:text-xl font-bold mb-4'>{t('course1')}</p>
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-orange-400 font-bold">{t('tagline1')} </h2>
+                    <h2 className='text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-4'>{t('tagline2')}</h2>
                     <p className="mb-6 text-sm sm:text-lg text-gray-300 ">
-                        Dive into the world of entrepreneurship with our
-                        comprehensive 15-chapter course, designed
-                        specifically for Marathi businessmen. This course will
-                        equip you with the knowledge and practical skills to
-                        take your business to the next level!
+                        {t('chapterInfo')}
                     </p>
                     <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 mb-6 text-sm sm:text-lg text-white">
                         <div className="flex items-center">
@@ -103,7 +101,7 @@ const CoursePromoCard = () => {
                                 <path d="M16.6127 16.0847C13.9796 17.5678 12.4773 20.641 12 21.5001V8.00005C12.4145 7.25401 13.602 5.11651 15.6317 3.66373C16.4868 3.05172 16.9143 2.74571 17.4572 3.02473C18 3.30376 18 3.91968 18 5.15151V13.9915C18 14.6569 18 14.9896 17.8634 15.2234C17.7267 15.4572 17.3554 15.6664 16.6127 16.0847Z" stroke="#FF8125" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M12 7.80556C11.3131 7.08403 9.32175 5.3704 5.98056 4.76958C4.2879 4.4652 3.44157 4.31301 2.72078 4.89633C2 5.47965 2 6.42688 2 8.32133V15.1297C2 16.8619 2 17.728 2.4626 18.2687C2.9252 18.8095 3.94365 18.9926 5.98056 19.3589C7.79633 19.6854 9.21344 20.2057 10.2392 20.7285C11.2484 21.2428 11.753 21.5 12 21.5C12.247 21.5 12.7516 21.2428 13.7608 20.7285C14.7866 20.2057 16.2037 19.6854 18.0194 19.3589C20.0564 18.9926 21.0748 18.8095 21.5374 18.2687C22 17.728 22 16.8619 22 15.1297V8.32133C22 6.42688 22 5.47965 21.2792 4.89633C20.5584 4.31301 19 4.76958 18 5.5" stroke="#FF8125" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            15 Chapters
+                            {t('chapters')}
                         </div>
                         <div className="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" className='border rounded-sm border-gray-400 mr-2' width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -111,7 +109,7 @@ const CoursePromoCard = () => {
                                 <path d="M17 8.90585L17.1259 8.80196C19.2417 7.05623 20.2996 6.18336 21.1498 6.60482C22 7.02628 22 8.42355 22 11.2181V12.7819C22 15.5765 22 16.9737 21.1498 17.3952C20.2996 17.8166 19.2417 16.9438 17.1259 15.198L17 15.0941" stroke="#FF8125" strokeWidth="1.5" strokeLinecap="round" />
                                 <path d="M11.5 11C12.3284 11 13 10.3284 13 9.5C13 8.67157 12.3284 8 11.5 8C10.6716 8 10 8.67157 10 9.5C10 10.3284 10.6716 11 11.5 11Z" stroke="#FF8125" strokeWidth="1.5" />
                             </svg>
-                            5 hours of video content
+                            {t('chaptersContent')}
                         </div>
                     </div>
                     <div className="flex items-center mb-0 md:mb-4 relative overflow-hidden h-16">
@@ -132,7 +130,7 @@ const CoursePromoCard = () => {
                         onClick={handleKnowMore}
                         className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 text-sm sm:text-base w-full sm:w-auto"
                     >
-                        Know More
+                        {t('knowMore')}
                     </button>
                 </div>
 
