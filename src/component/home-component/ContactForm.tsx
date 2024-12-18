@@ -3,7 +3,7 @@ import * as Yup from 'yup';
 import { useState } from 'react';
 import icon2 from '../../assets/icons/Vector 2043.png';
 import { toast } from 'react-hot-toast';
-import { useTranslation, UseTranslationOptions } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 // Access environment variables correctly in React
 const SMTP2GO_CONFIG = {
