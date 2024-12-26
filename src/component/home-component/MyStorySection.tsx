@@ -7,10 +7,15 @@ import { useTranslation } from 'react-i18next';
 
 const MyStorySection = () => {
     const [showVideo, setShowVideo] = useState(false);
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const toggleVideo = () => {
         setShowVideo(!showVideo);
+    };
+    const getFontClass = () => {
+        return i18n.language === 'mr'
+            ? 'font-marathi' // Class for Marathi font
+            : 'font-sans'; // Default font for English
     };
 
     return (
@@ -21,7 +26,7 @@ const MyStorySection = () => {
             </div>
 
             <div className="container mx-auto relative z-10">
-                <h2 className="text-xl sm:text-3xl font-bold text-center mb-8 flex items-center justify-center text-black">{t('myStory')} <img src={journeyicon} height={24} width={24} className='ml-2' alt="" /></h2>
+                <h2 className={`text-xl sm:text-3xl font-bold text-center mb-8 flex items-center justify-center text-black ${getFontClass()}`}>{t('myStory')} <img src={journeyicon} height={24} width={24} className='ml-2' alt="" /></h2>
 
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="w-full md:w-1/2 mb-8 md:mb-0">
@@ -46,7 +51,7 @@ const MyStorySection = () => {
                         </div>
                     </div>
                     <div className="w-full md:w-1/2 ">
-                        <h3 className="text-xl md:text-4xl font-bold mb-4 text-black">
+                        <h3 className={`text-xl md:text-4xl font-bold mb-4 text-black ${getFontClass()}`}>
                             {t('storyHeading')}
                         </h3>
                         <ul className="space-y-4 text-black font-semibold text-sm sm:text-base">
