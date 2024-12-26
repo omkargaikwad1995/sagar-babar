@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const WhatYoullLearn = () => {
     const cardsRef = useRef<HTMLDivElement[]>([]);
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         const observerOptions = {
@@ -36,6 +36,12 @@ const WhatYoullLearn = () => {
 
         return () => observer.disconnect();
     }, []);
+
+    const getFontClass = () => {
+        return i18n.language === 'mr'
+            ? 'font-marathi' // Class for Marathi font
+            : 'font-sans'; // Default font for English
+    };
 
     const cards = [
         {
@@ -71,7 +77,7 @@ const WhatYoullLearn = () => {
                 {/* Left side - Sticky Heading */}
                 <div className="w-full lg:w-1/2 px-4 lg:min-h-screen  lg:mb-0">
                     <div className="lg:sticky lg:top-1/3 p-4 lg:p-6">
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6">
+                        <h2 className={`text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 ${getFontClass()}`}>
                             {t('whatYoullLearnHeading1')} <br className="hidden lg:block" />
                             <span className="text-orange-500 block mt-2 sm:mt-3 lg:mt-4">
                                 {t('whatYoullLearnHeading2')}
