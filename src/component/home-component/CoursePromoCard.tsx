@@ -96,8 +96,8 @@ const CoursePromoCard = () => {
                 <div className="p-6 sm:p-8 lg:w-3/5">
                     <span className='text-sm sm:text-base lg:text-xl font-light bg-blue-800 px-4 py-1 sm:px-6 sm:py-2 rounded-full inline-block mb-4 sm:mb-8'>{t('course')}</span>
                     <p className='text-sm sm:text-2xl lg:text-xl font-bold mb-4'>{t('course1')}</p>
-                    <h2 className={`text-xl sm:text-2xl lg:text-3xl text-orange-400 font-bold ${getFontClass()}`}>{t('tagline1')} </h2>
-                    <h2 className={`text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-4 ${getFontClass()}`}>{t('tagline2')}</h2>
+                    <h2 className={`text-xl sm:text-2xl lg:text-3xl text-orange-400 font-bold ${getFontClass()}`}>{t('courseTitle1')}</h2>
+                    <h2 className={`text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-4 ${getFontClass()}`}>{t('tagline1')}</h2>
                     <p className="mb-6 text-sm sm:text-lg text-gray-300 ">
                         {t('chapterInfo')}
                     </p>

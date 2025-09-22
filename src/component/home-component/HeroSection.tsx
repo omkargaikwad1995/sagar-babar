@@ -18,8 +18,7 @@ const HeroSection = () => {
             : 'font-sans'; // Default font for English
     };
 
-    const handleAskMeHowClick = (e: any) => {
-        e.preventDefault();
+    const handleAskMeHowClick = () => {
         if (location.pathname !== '/') {
             localStorage.setItem('scrollToContact', 'true');
             navigate('/');

@@ -63,6 +63,7 @@ export interface TranslationResource {
     footerDesc: string;
     courseTagline: string;
     courseTitle1: string;
+    courseTitleTagline1: string;
     courseTitle2: string;
     courseDesc1: string;
     courseDesc2: string;
@@ -122,5 +123,8 @@ export interface TranslationResource {
     mentorTitle2: string;
     mentorDesc1: string;
     mentorDesc2: string;
-
+    mentorship: string;
+    mentorshipTitle1: string;
+    mentorshipTitle2: string;
+    mentorshipDesc: string;
 }

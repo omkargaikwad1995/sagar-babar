@@ -14,7 +14,7 @@ const resources: {
             language_name: "English",
             // Hero Section
             navHome: "Home",
-            navCourse: "Course",
+            navCourse: "Courses",
             navContact: "Contact",
             navLogin: "Course Login",
             heroTitle1: "You are Never too Young to start an Empire and Never too Old to",
@@ -78,7 +78,8 @@ const resources: {
             contactDesc: "When you connect with me, you're not just making contact—you're stepping into a world of growth and opportunity. Expect personalized guidance, fast responses, and actionable strategies tailored to your unique challenges. Whether it's business insights or support for your next big step, I'm here to ensure your success. This connection is absolutely worth it!",
             footerDesc: "Entrepreneur, Business Coach, Educator, Author, and Meditation Practitioner with 20+ years of experience in building successful business models through continuous learning and innovation.",
             courseTagline: `"Maharashtra's first-ever business course in Marathi."`,
-            courseTitle1: "From Zero to a 2 Crore Business:",
+            courseTitle1: "Business 1.0 by Sagar Babar",
+            courseTitleTagline1: "From Zero to a 2 Crore Business:",
             courseTitle2: "A Path to Success",
             courseDesc1: "Dive into the world of entrepreneurship with our comprehensive 15-chapter",
             courseDesc2: "course, designed specifically for Marathi businessmen. This course will equip you",
@@ -137,8 +138,11 @@ const resources: {
             mentorTitle1: "Meet",
             mentorTitle2: "Your Mentor",
             mentorDesc1: "Sagar Babar is an Entrepreneur, Business Coach, Educator, Author, Meditation Practitioner and Content Creator. With over 20 years of experience, he has mastered the art of learning, unlearning, and applying business strategies that work. Over the years, he has successfully created business models that deliver real results.",
-            mentorDesc2: "In addition to his business expertise, Sagar is a content creator with over 2 lakh followers. He shares content related to business to empower the Marathi community, offering valuable insights to help people achieve success in their entrepreneurial journeys."
-
+            mentorDesc2: "In addition to his business expertise, Sagar is a content creator with over 2 lakh followers. He shares content related to business to empower the Marathi community, offering valuable insights to help people achieve success in their entrepreneurial journeys.",
+            mentorship: "Mentorship",
+            mentorshipDesc: 'Ready to take your skills to the next level? Apply for our mentorship program and get personalized guidance from industry experts.',
+            mentorshipTitle1: 'Start Your',
+            mentorshipTitle2: 'Mentorship Journey',
         }
     },
     mr: {
@@ -206,7 +210,8 @@ const resources: {
             contactDesc: "जेव्हा तुम्ही माझ्याशी संपर्क साधता, तेव्हा तुम्ही केवळ संपर्क साधत नाही, तर एक वाढीच्या आणि संधींच्या जगात पाऊल ठेवता. तुमच्या विशिष्ट आव्हानांनुसार वैयक्तिक मार्गदर्शन, जलद प्रतिसाद आणि क्रियाशील रणनीतींची अपेक्षा करा. मग ते व्यवसाय संबंधित माहिती असो किंवा तुमच्या पुढच्या मोठ्या पावलासाठी समर्थन, मी तुमच्या यशासाठी येथे आहे. हा संपर्क नक्कीच फायदेशीर आहे!",
             footerDesc: " उद्योजक, व्यवसाय कोच, शिक्षक, लेखक, आणि ध्यान साधक 20+ वर्षांच्या अनुभवासह, सतत शिकण्यास आणि नाविन्याची अंगीकार केल्याने यशस्वी व्यवसाय मॉडेल्स तयार केले आहेत.",
             courseTagline: "",
-            courseTitle1: "भरारी: 0-->२ कोटी व्यवसायाचे",
+            courseTitle1: "बिझनेस १.० - सागर बाबर",
+            courseTitleTagline1: "भरारी: 0-->२ कोटी व्यवसायाचे",
             courseTitle2: "यशस्वी भविष्य",
             courseDesc1: "उद्योजकतेच्या जगात प्रवेश करा .आमच्या १५ chapters च्या अभ्यासक्रमासोबत,",
             courseDesc2: "जो खास मराठी उद्योजकां साठी तयार केला आहे. या अभ्यासक्रमातून तुम्हाला तुमचा व्यवसाय",
@@ -265,8 +270,11 @@ const resources: {
             mentorTitle1: "तुमच्या ",
             mentorTitle2: "मेंटरला भेटा",
             mentorDesc1: "सागर बाबर हे एक उद्योजक, व्यवसाय मार्गदर्शक, शिक्षक, लेखक, ध्यान साधक आणि कंटेंट क्रिएटर आहेत. त्यांना व्यवसाय क्षेत्रात 20 पेक्षा जास्त वर्षांचा अनुभव आहे. त्यांनी शिकणे, विसरणे आणि प्रभावी व्यवसाय धोरणे अंमलात आणण्याची कला आत्मसात केली आहे. या अनुभवाच्या आधारावर, त्यांनी अनेक यशस्वी व्यवसाय मॉडेल्स तयार केली आहेत, जी प्रत्यक्ष परिणाम देण्यात सक्षम आहेत.",
-            mentorDesc2: "व्यवसाय कौशल्यांव्यतिरिक्त, सागर बाबर हे कंटेंट क्रिएटर म्हणूनही ओळखले जातात. त्यांचे 2 लाखांहून अधिक फॉलोअर्स आहेत. ते मराठी समाजासाठी व्यवसायाशी संबंधित महत्त्वपूर्ण माहिती आणि मार्गदर्शन शेअर करतात. त्यांच्या कंटेंटच्या माध्यमातून, ते मराठी उद्योजकांना प्रेरणा आणि व्यवसायात यश मिळवण्यासाठी उपयोगी ठरतील असे ज्ञान उपलब्ध करून देतात."
-
+            mentorDesc2: "व्यवसाय कौशल्यांव्यतिरिक्त, सागर बाबर हे कंटेंट क्रिएटर म्हणूनही ओळखले जातात. त्यांचे 2 लाखांहून अधिक फॉलोअर्स आहेत. ते मराठी समाजासाठी व्यवसायाशी संबंधित महत्त्वपूर्ण माहिती आणि मार्गदर्शन शेअर करतात. त्यांच्या कंटेंटच्या माध्यमातून, ते मराठी उद्योजकांना प्रेरणा आणि व्यवसायात यश मिळवण्यासाठी उपयोगी ठरतील असे ज्ञान उपलब्ध करून देतात.",
+            mentorship: "मार्गदर्शन",
+            mentorshipTitle1: 'तुमची प्रवासाची',
+            mentorshipTitle2: 'सुरुवात करा',
+            mentorshipDesc: 'तुमचे कौशल्य पुढच्या पातळीवर नेण्यासाठी तयार आहात का? आमच्या मार्गदर्शन कार्यक्रमासाठी अर्ज करा आणि उद्योगातील तज्ज्ञांकडून वैयक्तिक मार्गदर्शन मिळवा.',
         }
     }
 };
