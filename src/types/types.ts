@@ -123,5 +123,8 @@ export interface TranslationResource {
     mentorTitle2: string;
     mentorDesc1: string;
     mentorDesc2: string;
-
+    mentorship: string;
+    mentorshipTitle1: string;
+    mentorshipTitle2: string;
+    mentorshipDesc: string;
 }

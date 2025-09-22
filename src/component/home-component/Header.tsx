@@ -12,7 +12,6 @@ const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const { t } = useTranslation();
-
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const handleContactClick = (e: any) => {
@@ -50,9 +49,18 @@ const Header = () => {
 
     const navItems = [
         { name: t('navHome'), path: '/' },
-        { name: t('navCourse'), path: '/course' },
+        {
+            name: t('navCourse'),
+            dropdown: [
+                { name: 'Business 1.0 by Sagar Babar', path: '/course' },
+                { name: 'Sales and Marketing by Sagar Babar', path: '/sales-and-marketing' },
+                { name: 'Ultimate Business Bundle by Sagar Babar', path: '/ultimate-business-bundle' }
+            ]
+        },
         { name: t('navContact'), onClick: handleContactClick, isContact: true },
+        { name: t('mentorship'), path: '/mentorship' },
     ];
+
     return (
         <nav className="relative text-white px-4 sm:px-6 md:px-10 py-4 z-50">
             <img src={cover} alt="Navigation background" className="absolute inset-0 w-full h-full object-cover z-0" />
@@ -83,8 +91,51 @@ const Header = () => {
 
                     <ul className="flex flex-col lg:flex-row justify-center items-center h-full lg:h-auto">
                         {navItems.map((item) => (
-                            <li key={item.name} className="mb-8 lg:mb-0 lg:ml-6">
-                                {item.path ? (
+                            <li key={item.name} className="mb-8 lg:mb-0 lg:ml-6 relative group">
+                                {item.dropdown ? (
+                                    <>
+                                        {/* Parent button */}
+                                        <span
+                                            className={`block cursor-pointer transition text-center duration-300 text-xl lg:text-base ${isActive('/course')
+                                                ? 'text-orange-500 font-semibold'
+                                                : 'text-white hover:text-orange-500'
+                                                }`}
+                                        >
+                                            {item.name}
+                                        </span>
+
+                                        {/* Dropdown menu */}
+                                        <ul
+                                            className="
+    lg:absolute lg:left-0 lg:top-full lg:bg-blue-800 lg:rounded-lg text-center lg:shadow-lg lg:hidden group-hover:block 
+    w-full lg:w-56
+  "
+                                        >
+                                            {item.dropdown.map((sub) => (
+                                                <li
+                                                    key={sub.name}
+                                                    className="
+        border-b border-blue-700 last:border-none 
+        lg:border-none
+      "
+                                                >
+                                                    <Link
+                                                        to={sub.path}
+                                                        className="
+          block px-4 py-3 
+          text-white rounded-md hover:bg-orange-500 hover:rounded-md
+          transition 
+          text-lg lg:text-base
+        "
+                                                        onClick={() => setIsMenuOpen(false)}
+                                                    >
+                                                        {sub.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </>
+                                ) : item.path ? (
                                     <Link
                                         to={item.path}
                                         className={`block transition duration-300 text-xl lg:text-base ${isActive(item.path)
@@ -98,7 +149,7 @@ const Header = () => {
                                 ) : (
                                     <button
                                         className={`block transition duration-300 text-xl lg:text-base 
-                                            ${item.isContact
+                        ${item.isContact
                                                 ? 'text-white hover:text-white'
                                                 : 'text-white hover:text-orange-500'
                                             }`}

@@ -1,8 +1,15 @@
 // import courseBannerimage2 from '../../assets/images/Group 1000006521.svg';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+
 
 const HeroSection = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
+
+    const handleSecondSite = () => {
+        navigate('/second-site')
+    }
     return (
         <section className="p-4 sm:p-6 md:p-8 lg:p-12">
             <div className="bg-white shadow-2xl rounded-xl overflow-hidden">
@@ -26,13 +33,21 @@ const HeroSection = () => {
 
                         <div className="flex flex-wrap items-center gap-4 mb-6">
 
-                            <a href="https://course.sagarbabar.com/courses/How-to-start-business-670e02c79bdcdb5ec721dd0e-670e02c79bdcdb5ec721dd0e"
+                            {/* <a href="https://course.sagarbabar.com/courses/How-to-start-business-670e02c79bdcdb5ec721dd0e-670e02c79bdcdb5ec721dd0e"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 rounded-full transition duration-300 text-sm sm:text-base whitespace-nowrap"
                             >
                                 Enroll Now
-                            </a>
+                            </a> */}
+
+                            <button
+                                rel="noopener noreferrer"
+                                className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 rounded-full transition duration-300 text-sm sm:text-base whitespace-nowrap"
+                                onClick={handleSecondSite}
+                            >
+                                Enroll Now
+                            </button>
 
                             <div className="flex items-center gap-4">
                                 <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-black">
